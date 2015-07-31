@@ -36,7 +36,7 @@
         //boton mostrar contacto
         $("#btnLista").tap(
                 function () {
-                    //alert("entro-...");
+                    alert("entro-...");
                     navigator.contacts.find(["*"], function (contactos) {
                         var elemento = $("#listContactos");
                         for (i = 0; i < contactos.length; i++) {
