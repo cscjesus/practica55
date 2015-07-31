@@ -39,7 +39,7 @@
                     //alert("entro-...");
                     navigator.contacts.find(["*"], function (contactos) {
                         var elemento = $("#listContactos");
-                        for (i = 0; i < contactos.legth; i++) {
+                        for (i = 0; i < contactos.length; i++) {
                             var contacto = contactos[i];
                             elemento.append("<li>" + contacto.displayName + "</li>");
                         }
