@@ -41,7 +41,7 @@
                         var elemento = $("#listContactos");
                         for (i = 0; i < contactos.legth; i++) {
                             var contacto = contactos[i];
-                            elemento.html("<li>" + contacto.displayName + "</li>");
+                            elemento.append("<li>" + contacto.displayName + "</li>");
                         }
                         elemento.listview("refresh");
                     }, function (error) {
